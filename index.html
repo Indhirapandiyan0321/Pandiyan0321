@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Booklet<i class="fa-solid fa-pen pen"></i></h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <div class="header">
+                <h3>Rich Dad Poor Dad</h3>
+                <h5>-Robert-</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis consequuntur quisquam modi, eum
+                aliquam perspiciatis tempore iste. Perspiciatis pariatur aliquid dolor, distinctio quasi eligendi dolore
+                non. Deleniti, atque perspiciatis.</p>
+            <button onclick="deleteBook(event)">Delete</button>
+
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+  <div class="popup-box">
+    <div class="title">
+        <h2>Add Story</h2>
+    </div>
+   <form>
+    <input type="text" placeholder="Book Title" id="book-title-input">
+    <input type="text" placeholder="Book Author" id="book-author-input">
+    <textarea placeholder="description" id="book-description" ></textarea>
+    <button id="add-button">ADD</button>
+    <button id="cancel-button">CANCEL</button>
+   </form>
+  </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
